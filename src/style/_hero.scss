@@ -35,7 +35,6 @@
 
   &__text {
     color: $white;
-    font-family: Arial;
     font-size: 25px;
     font-weight: 400;
     margin-bottom: 20px;
@@ -44,7 +43,6 @@
 
   &__subtext {
     color: $white;
-    font-family: Arial;
     font-size: 25px;
     font-style: normal;
     font-weight: 700;
@@ -56,7 +54,6 @@
     border-radius: 15px;
     background: linear-gradient(90deg, #439CFB 7.15%, #F187FB 105.21%);
     color: $white;
-    font-family: Arial;
     font-size: 25px;
     font-weight: 700;
     line-height: normal;
@@ -66,7 +63,7 @@
 
     &:hover {
       background: linear-gradient(180deg, #439CFB 7.15%, #F187FB 105.21%);
-      color: $secondColor;
+      color: $fontColor;
     }
   }
 }
