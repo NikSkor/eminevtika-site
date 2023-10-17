@@ -1,9 +1,7 @@
 import './index.html';
 import './index.scss';
-import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
-// import Swiper and modules styles
 import 'swiper/css/bundle';
+import showAndHide from './modules/showAndHide';
 
 const productSlider = () => {
   Promise.all([
@@ -23,4 +21,9 @@ const productSlider = () => {
   });
 };
 
-productSlider();
+const initSite = () => {
+  productSlider();
+  showAndHide();
+}
+
+initSite();
