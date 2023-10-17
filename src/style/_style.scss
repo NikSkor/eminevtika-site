@@ -71,9 +71,15 @@ iframe {
   transform: scale(0);
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+}
+
 .container {
-  --max-width: 1000px;
-  --padding: 30px;
+  --max-width: 1360px;
+  --padding: 40px;
   max-width: calc(var(--max-width) + var(--padding) * 2);
   padding: 0 var(--padding);
   margin: 0 auto;
