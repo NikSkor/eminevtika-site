@@ -20,12 +20,6 @@
     }
   }
 
-
-  &__block {
-  }
-
-  
-
   &__title {
     font-size: 50px;
     font-weight: 700;
@@ -95,12 +89,10 @@
     }
     @include tablet {
       width: 15px;
-      // height: 30px;
     }
 
     @include mobile {
       width: 10px;
-      // height: 20px;
     }
   }
 
@@ -115,22 +107,6 @@
     width: 280px;
     gap: 20px !important;
     text-align: center;
-    // @include laptop {
-    //     width: 230px;
-    //     height: 230px;
-    //   }
-    
-    //   @include tablet {
-    //     width: 180px;
-    //     height: 180px;
-    //   }
-    
-    //   @include mobile {
-    //     width: 150px;
-    //     height: 150px;
-    //   }
-
-  
   }
 
   &__item-img {
@@ -140,24 +116,6 @@
     align-items: center;
     justify-content: center;
     background-color: $gray;
-  }
-
-  &__img {
-    // height: 280px;
-    // @include laptop {
-    //   width: 230px;
-    //   height: 230px;
-    // }
-    
-    // @include tablet {
-    //   width: 180px;
-    //   height: 180px;
-    // }
-    
-    // @include mobile {
-    //   width: 150px;
-    //   height: 150px;
-    // }
   }
 
   &__subitem {

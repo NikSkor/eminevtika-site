@@ -1,8 +1,4 @@
 .description {
-
-
-  &__container {}
-
   &__block {
     display: flex;
     flex-direction: column;
@@ -45,9 +41,6 @@
       font-size: 20px;
       line-height: 25px;
     }
-  }
-
-  &__list {
   }
 
   &__item {
@@ -153,8 +146,5 @@
       display: flex;
       padding-top: 20px;
     }
-  }
-
-  &__text {
   }
 }
