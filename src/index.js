@@ -35,6 +35,21 @@ const productSlider = () => {
         prevEl: '.speakers__arrow_left',
       },
       modules: [Navigation, Thumbs],
+      breakpoints: {
+        // настройки для разных разрешений
+        0: {
+          slidesPerView: 2,
+        },
+        580: {
+          slidesPerView: 3,
+        },
+        780: {
+          slidesPerView: 3,
+        },
+        1024: {
+          slidesPerView: 4,
+        },
+      },
     });
   });
 };

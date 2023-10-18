@@ -4,6 +4,20 @@
     padding-left: 80px;
     padding-right: 80px;
     position: relative;
+
+    @include laptop {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  
+    @include tablet {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  
+    @include mobile {
+
+    }
   }
 
 
@@ -19,38 +33,75 @@
     margin-bottom: 40px;
 
     @include laptop {
-        font-size: 60px;
-        line-height: 75px;
-      }
-    
-      @include tablet {
-        font-size: 50px;
-        line-height: 45px;
-      }
-    
-      @include mobile {
-        font-size: 30px;
-        line-height: 35px;
-      }
+      font-size: 50px;
+      line-height: 50px;
+    }
+
+    @include tablet {
+      font-size: 30px;
+      line-height: 30px;
+    }
+
+    @include mobile {
+      font-size: 20px;
+      line-height: 25px;
+    }
   }
 
   &__arrow {
     position: absolute;
+    transform: translate(-50%, -50%);
     z-index: 15;
+    min-width: 30px;
     
     &_left {
       top: 50%;
-      left: 0;
+      left: 35px;
+
+      @include laptop {
+        left: 30px;
+      }
+    
+      @include tablet {
+        left: 20px;
+      }
+    
+      @include mobile {
+        left: 20px;
+      }
     }
 
     &_right {
       top: 50%;
-      right: 0;
+      right: 20px;
+
+      @include laptop {
+        right: -5px;
+      }
+    
+      @include tablet {
+        right: -25px;
+      }
+    
+      @include mobile {
+        right: -35px;
+      }
     }
   }
 
   &__svg {
+    @include laptop {
+      width: 20px;
+    }
+    @include tablet {
+      width: 15px;
+      // height: 30px;
+    }
 
+    @include mobile {
+      width: 10px;
+      // height: 20px;
+    }
   }
 
   &__list {
@@ -60,9 +111,26 @@
   &__item {
     display: flex !important;
     flex-direction: column;
+    justify-content: space-between !important;
     width: 280px;
     gap: 20px !important;
     text-align: center;
+    // @include laptop {
+    //     width: 230px;
+    //     height: 230px;
+    //   }
+    
+    //   @include tablet {
+    //     width: 180px;
+    //     height: 180px;
+    //   }
+    
+    //   @include mobile {
+    //     width: 150px;
+    //     height: 150px;
+    //   }
+
+  
   }
 
   &__item-img {
@@ -75,6 +143,21 @@
   }
 
   &__img {
+    // height: 280px;
+    // @include laptop {
+    //   width: 230px;
+    //   height: 230px;
+    // }
+    
+    // @include tablet {
+    //   width: 180px;
+    //   height: 180px;
+    // }
+    
+    // @include mobile {
+    //   width: 150px;
+    //   height: 150px;
+    // }
   }
 
   &__subitem {
@@ -90,12 +173,21 @@
     font-family: Arial;
     font-size: 27px;
     font-weight: 700;
+
+    @include laptop {
+      font-size: 23px;
+    }
+  
+    @include tablet {
+      font-size: 17px;
+    }
+  
+    @include mobile {
+      font-size: 13px;
+    }
   }
 
   &__text {
     text-align: center;
-    font-family: Arial;
-    font-size: 25px;
-    font-weight: 400;
   }
 }
