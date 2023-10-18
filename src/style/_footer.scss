@@ -1,6 +1,6 @@
 .footer {
 
-  &_container {
+  &__container {
     padding-top: 30px;
     padding-bottom: 30px;
   }
@@ -13,7 +13,7 @@
     justify-content: space-between;
   }
 
-  &_privacy {
+  &__privacy {
     display: flex;
     flex-direction: column;
     gap: 10px;

@@ -31,8 +31,6 @@
   }
 
   &__text {
-    font-size: 25px;
-    font-weight: 400;
   }
   &__previews {
     display: flex;
@@ -43,5 +41,20 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
+  }
+
+  &__btn {
+    border-radius: 15px;
+    background: linear-gradient(90deg, #439CFB 7.15%, #F187FB 105.21%);
+    color: $white;
+    font-weight: 700;
+    padding: 18px 84px;
+    transition: all .3s ease-in-out;
+    z-index: 10;
+  
+    &:hover {
+      background: linear-gradient(180deg, #439CFB 7.15%, #F187FB 105.21%);
+      color: $fontColor;
+    }
   }
 }

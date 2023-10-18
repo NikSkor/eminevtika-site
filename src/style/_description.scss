@@ -6,7 +6,6 @@
   &__block {
     display: flex;
     flex-direction: column;
-    // gap: 40px;
     padding-left: 40px;
     padding-right: 40px;
   }
@@ -41,7 +40,7 @@
 
   &__icon {}
 
-  &_text-block {
+  &__text-block {
     display: none;
     flex-direction: column;
     padding-top: 0;
@@ -54,6 +53,5 @@
   }
 
   &__text {
-    font-weight: 400;
   }
 }
