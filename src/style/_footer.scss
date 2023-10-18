@@ -1,0 +1,34 @@
+.footer {
+
+  &_container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  &__block {
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    gap: 80px;
+    justify-content: space-between;
+  }
+
+  &_privacy {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  
+
+  &__text {
+  }
+
+  &__callback {
+    font-weight: 700;
+  }
+
+  &__link {
+    text-decoration-line: underline;
+  }
+}
