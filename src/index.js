@@ -3,6 +3,24 @@ import './index.scss';
 import 'swiper/css/bundle';
 import showAndHide from './modules/showAndHide';
 
+
+
+// const countColumn = () => {
+//   let count = 4;
+//   let windowInnerWidth = document.documentElement.clientWidth;
+
+//   if (windowInnerWidth <= '800' && windowInnerWidth >= '600') {
+//     count = 3;
+//   } else if (windowInnerWidth <= '600' && windowInnerWidth >= '500') {
+//     count = 2;
+//   } else if (windowInnerWidth <= '500') {
+//     count = 1;
+//   }
+
+//   return count;
+// }
+
+
 const productSlider = () => {
   Promise.all([
     import('swiper/modules'),

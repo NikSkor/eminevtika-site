@@ -7,6 +7,23 @@
     gap: 80px;
     padding-left: 40px;
     padding-right: 40px;
+
+    @include laptop {
+      gap: 40px;
+    }
+    
+    @include tablet {
+      gap: 20px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    
+    @include mobile {
+      flex-direction: column;
+      gap: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
   }
 
 
@@ -17,6 +34,19 @@
     gap: 40px;
     flex-basis: 50%;
     justify-content: center;
+
+    @include laptop {
+        gap: 30px;
+      }
+    
+      @include tablet {
+        gap: 25px;
+      }
+    
+      @include mobile {
+        padding-top: 20px;
+        gap: 15px;
+      }
   }
 
   &__previews {
@@ -28,6 +58,21 @@
     font-size: 50px;
     font-weight: 700;
     line-height: 60px;
+
+    @include laptop {
+        font-size: 50px;
+        line-height: 50px;
+      }
+    
+      @include tablet {
+        font-size: 30px;
+        line-height: 30px;
+      }
+    
+      @include mobile {
+        font-size: 20px;
+        line-height: 25px;
+      }
   }
 
   &__text {
@@ -35,12 +80,40 @@
   &__previews {
     display: flex;
     gap: 40px;
+
+    @include laptop {
+        gap: 25px;
+      }
+  
+    @include tablet {
+      gap: 20px;
+    }
+  
+    @include mobile {
+      gap: 10px;
+    }
   }
 
   &__prev-block {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 50px;
+
+    @include laptop {
+      gap: 60px;
+    }
+    
+    @include tablet {
+      gap: 50px;
+    }
+  
+    @include mobile {
+      gap: 10px;
+    }
+  }
+
+  &_prev-img {
+    width: 100%;
   }
 
   &__btn {
@@ -51,6 +124,18 @@
     padding: 18px 84px;
     transition: all .3s ease-in-out;
     z-index: 10;
+
+    @include laptop {
+        padding: 14px 54px;
+      }
+    
+      @include tablet {
+        padding: 12px 44px;
+      }
+    
+      @include mobile {
+        padding: 10px 34px;
+      }
   
     &:hover {
       background: linear-gradient(180deg, #439CFB 7.15%, #F187FB 105.21%);

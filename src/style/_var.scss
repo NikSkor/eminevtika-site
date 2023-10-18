@@ -8,8 +8,8 @@ $white: #FFFFFF;
 // $bg-color: #000;
 
 $laptop: 1024px;
-$tablet: 768px;
-$mobile: 560px;
+$tablet: 780px;
+$mobile: 580px;
 
 @mixin laptop {
   @media (max-width: #{$laptop}) {

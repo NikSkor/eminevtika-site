@@ -3,6 +3,20 @@
   &__container {
     display: flex;
     gap: 40px;
+
+    @include laptop {
+      gap: 30px;
+    }
+  
+    @include tablet {
+      flex-direction: column-reverse;
+      gap: 25px;
+    }
+  
+    @include mobile {
+      
+      gap: 15px;
+    }
   }
 
   &__video-block {
@@ -17,6 +31,29 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+@include tablet {
+    height: 300px;
+  }
+
+  @include mobile {
+    height: 200px;
+  }
+  }
+
+  &__svg {
+
+    @include laptop {
+      width: 110px;
+      }
+    
+    @include tablet {
+      width: 80px;
+    }
+  
+    @include mobile {
+      width: 60px;
+    }
   }
 
   &__info {
@@ -24,16 +61,41 @@
     display: flex;
     flex-direction: column;
     gap: 45px;
+
+    @include laptop {
+      gap: 20px;
+    }
+  
+    @include tablet {
+      gap: 15px;
+    }
+  
+    @include mobile {
+      gap: 10px;
+    }
   }
 
   &__title {
     font-size: 50px;
     font-weight: 700;
     line-height: 60px;
+
+    @include laptop {
+        font-size: 50px;
+        line-height: 50px;
+      }
+    
+      @include tablet {
+        font-size: 30px;
+        line-height: 30px;
+      }
+    
+      @include mobile {
+        font-size: 20px;
+        line-height: 25px;
+      }
   }
 
   &__text {
-    font-size: 25px;
-    font-weight: 400;
   }
 }
