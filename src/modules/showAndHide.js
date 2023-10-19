@@ -1,6 +1,5 @@
 const showAndHide = () => {
   const arrayList = document.querySelectorAll('.description__item');
-  console.log('arrayList: ', arrayList);
   arrayList.forEach((item) => {
     const btn = item.querySelector('.description__subheader');
     const icon = item.querySelector('.description__icon');
